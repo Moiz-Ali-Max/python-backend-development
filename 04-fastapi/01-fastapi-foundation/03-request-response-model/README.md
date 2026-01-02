@@ -1,14 +1,14 @@
 # Request / Response Model
 Request means what user (client, postman, browser) sends to the server
 #### 4 Common Parts in request
-```
+
 | Part         | Meaning                         |
 | ------------ | ------------------------------ |
 | Path         | Piece of Url or included in url                   |
 | Query Params | When we see the url and if their is a ? then after that it's a query parameter      |
 | Body         | JSON / data which we send on post |
 | Headers      | Extra info (token, auth, etc)  |
-```
+
 
 - Response what server sends back to the client (JSON response, Status Code)
     1. JSON 
@@ -45,11 +45,11 @@ def login_check(request: ReuestModel): #Here we add request functionality where 
 ```
 
 So this is the simple example where we implement the request/response model
-    1. First we make request model
-        - where user provide it's email and password
-    2. Second we make a response model
-        - After checking respone model sends response based on condition
-    3. We make a route to access this functionality and add a response in that path also.
-    4. We make a function where we add request model and it check the condition
-    5. Based on that condition if it credentials valid then no HTTPExceptions raised, and if it is invalid then the HTTPException raised
-        - HTTP Exception basically tell's us the if it's in the backend issue or frontend issue (there are varoius code's no need to memorize in gfg we get a full list of these exceptions)
+1. First we make request model
+     - where user provide it's email and password
+2. Second we make a response model
+      - After checking respone model sends response based on condition
+3. We make a route to access this functionality and add a response in that path also.
+4. We make a function where we add request model and it check the condition
+5. Based on that condition if it credentials valid then no HTTPExceptions raised, and if it is invalid then the HTTPException raised
+    - HTTP Exception basically tell's us the if it's in the backend issue or frontend issue (there are varoius code's no need to memorize in gfg we get a full list of these exceptions)
