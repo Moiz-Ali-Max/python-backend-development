@@ -148,6 +148,7 @@ class Ubl(BaseModel):
         valid_email = ['ubl.com', 'ubl-isb.com']
         email = value.split('@')[-1]
 
+
         if email not in valid_email:
             raise ValueError("Not a UBL Member")
         return value
